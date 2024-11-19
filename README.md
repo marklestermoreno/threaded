@@ -7,14 +7,7 @@ Pre-requisites
 
 Installation Instructions:
 
- 1) You have two options to get the code from GitHub 
-
- Option 1 - Clone the Repository
-
-   * Watch the tutorial here ->
-
- Option 2 - DOWNLOAD ZIP
-   
+ 1) You can watch the video for the installation ->   
    * Download ZIP
    * Extract the Files
    * Open the Application on Visual Studio 
