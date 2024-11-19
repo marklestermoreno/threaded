@@ -7,7 +7,7 @@ Pre-requisites
 
 Installation Instructions:
 
- 1) You can watch the video for the installation ->   
+ 1) Clone the repository
    * Download ZIP
    * Extract the Files
    * Open the Application on Visual Studio 
