@@ -1,0 +1,261 @@
+/* General Styles */
+.main-shopping {
+    margin: 40px;
+    padding: 20px;
+    background: #F2F2F2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-shopping-header>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-shopping-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+/* Order Summary */
+.shopping-item {
+    width: calc(100% - 400px);
+}
+
+.shopping-title {
+    text-align: center;
+    color: dimgray;
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+}
+
+.item-image {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-style {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.style-number {
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+.item-pricing {
+    text-align: right;
+}
+
+.item-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+.discounted-price {
+    color: #e63946;
+}
+
+.orig-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.decrement, .increment {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.add-to-cart, .remove-from-cart {
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-from-cart {
+    background-color: #e63946;
+    color: white;
+    margin-left: 10px;
+}
+
+.remove-from-cart:hover {
+    background-color: #c02942;
+}
+
+/* Order Summary */
+.shopping-summary {
+    width: 350px;
+}
+
+.shopping-summary>p {
+    text-align: center;
+    color: dimgray;
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.order-summary {
+    border: 1px solid black;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.order-summary>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.order-summary>p {
+    text-align: center;
+    color: crimson;
+}
+
+.shopping-summary>button {
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 30px;
+}
+
+.shopping-summary>button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+
+    .main-shopping-header>div {
+        flex-direction: column;
+    }
+
+    /* On small screens (like tablets), stack the shopping items and summary */
+    .main-shopping-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopping-item {
+        width: 100%; /* Make item take full width */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    .shopping-summary {
+        width: 100%; /* Make summary take full width */
+        margin-top: 20px;
+    }
+
+    .shopping-summary > button {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens */
+    .shopping-description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-image {
+        margin-right: 0;
+        margin-bottom: 15px; /* Add space between image and text */
+    }
+
+    .item-details {
+        align-items: flex-start;
+    }
+
+    .item-pricing {
+        text-align: left;
+    }
+
+    .quantity-control {
+        flex-direction: row;
+    }
+
+    .decrement, .increment {
+        padding: 8px 12px;
+    }
+
+    .quantity-input {
+        width: 50px;
+        font-size: 18px;
+    }
+
+    .shopping-summary {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .shopping-summary>button {
+        margin-top: 10px;
+        padding: 8px 30px;
+    }
+}

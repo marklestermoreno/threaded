@@ -1,0 +1,43 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Ensure padding and borders are included in width calculations */
+    margin: 0; /* Remove default margins */
+}
+
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fonts */
+
+.font-light {
+  font-weight: 400;
+}
+
+.font-regular {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+input {
+  padding: 0px 5px;
+  width: 250px;
+}
+
+
+@media (max-width: 260px) {
+  * {
+    display: none;
+  }
+}

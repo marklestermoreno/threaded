@@ -1,0 +1,109 @@
+.main-trending {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 50px 30px;
+}
+
+.main-trending>p {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* Make sure to use max-width to avoid overflow */
+.trending-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
+}
+
+.trending-item > img {
+    width: 100%;       
+    height: auto;      
+    max-height: 300px; 
+    object-fit: contain;    
+    object-position: center;
+}
+
+.trending-item > .item-description {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;   /* Add some space between image and text */
+}
+
+
+.hashtags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hashtags>button {
+    max-width: 300px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    transition: all 400ms;
+}
+
+.hashtags>button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 400ms;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 1200px) {
+    .trending-container {
+        grid-template-columns: repeat(3, 1fr);  /* 2 columns for smaller screens */
+
+    }
+}
+
+@media (max-width: 768px) {
+    .trending-container {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns for smaller screens */
+    }
+
+    .trending-item > img {
+        max-height: 200px;  /* Adjust image height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .trending-container {
+        grid-template-columns: 1fr;  /* 1 column for mobile */
+    }
+
+    .trending-item > img {
+        max-height: 180px;  /* Adjust image height for mobile */
+    }
+
+    .trending-item > span {
+        font-size: 16px;  /* Adjust font size for mobile */
+    }
+}

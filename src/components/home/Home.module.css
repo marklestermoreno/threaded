@@ -1,0 +1,131 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* SITE WIDE DEALS */
+
+.main-site-wide-deals {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 7rem;
+}
+
+.site-wide-deals {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.site-wide-deals>p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.percentage-off {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.percentage-off>span {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.percentage-condition {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.main-site-wide-deals>button {
+
+    padding: 1px 10px;
+    background-color: #000;
+    color: #fff;
+    height: 30px;
+    transition-duration: all 400ms;
+}
+
+.main-site-wide-deals>button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition-duration: all 400ms;
+}
+
+
+/* PREMIUMS */
+
+.premiums {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 7vh;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-top:10px;
+}
+
+.premiums>span {
+    width: 33%;
+    color: white;
+}
+
+.premiums-title {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.premiums>button {
+    background: #FFF;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    transition: all 400ms;
+}
+
+.premiums>button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 400ms;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .premiums-title {
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 567px) {
+
+    .premiums {
+        text-align: center;
+        height: 18vh;
+    }
+
+    .premiums-title {
+        margin: 10px 0px 10px 0px !important;
+    }
+
+    .premiums>span {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+
+}

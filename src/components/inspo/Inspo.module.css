@@ -1,0 +1,154 @@
+.main-inspo {
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 50px 30px;
+}
+
+.main-inspo>p {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Container for the entire grid */
+.inspo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inspo-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.item-image {
+  width: 100%;
+  max-height: 300px;
+  max-width: 350px;
+  margin-bottom: 5px;
+}
+
+.view-post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.view-post>button {
+  padding: 1px 10px;
+  background-color: #000;
+  color: #fff;
+  height: 30px;
+  width: 200px;
+  transition-duration: all 400ms;
+}
+
+.view-post>button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 400ms;
+}
+
+.exlusive-deals {
+  background: #000;
+  color: white;
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.exlusive-deals>span {
+  width: calc(100% - 500px);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.email-input {
+  display: flex;
+}
+
+.email-input>button {
+  background: white;
+  border: 1px solid black;
+
+}
+
+.email-input>button:hover {
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.email-input>button>img {
+  width: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .inspo-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .exlusive-deals>span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .inspo-container {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 items per row */
+  }
+
+  .exlusive-deals>span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .inspo-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 items per row */
+  }
+
+  .exlusive-deals {
+    width: 100%;
+    padding: 10px 0px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: block;
+
+  }
+
+  .email-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .inspo-container {
+    grid-template-columns: 1fr;
+    /* 1 item per row */
+  }
+}
